@@ -5,9 +5,12 @@ html,body{margin:0;padding:0;overflow:hidden;width:100%;
        display:flex;justify-content:center;align-items:center;
 						 background:rgba(36,36,38,0.99);font-family:
 						 'Ubuntu Mono';font-size:300%;}
-#a{color:#015D0D;position:absolute;left:10%;top:25%;}
-#b{color:#318D3D;position:absolute;left:30%;top:45%;}
-#c{color:#61BD6D;position:absolute;left:50%;top:65%;}
+#a{background:rgba(36,36,38,0.99);color:rgba(1,93,13,0.99);position:absolute;left:10%;top:25%;}
+#b{background:rgba(36,36,38,0.99);color:rgba(49,141,61,0.99);position:absolute;left:30%;top:45%;}
+#c{background:rgba(36,36,38,0.99);color:rgba(97,189,109,0.99);position:absolute;left:50%;top:65%;}
+#a::-moz-selection{background:rgb(36,36,38);color:rgb(1,93,13);}
+#b::-moz-selection{background:rgb(36,36,38);color:rgb(49,141,61);}
+#c::-moz-selection{background:rgb(36,36,38);color:rgb(97,189,109);}
 #tasks{position:absolute;top:30%;left:5%;width:40%;height:40%;
        display;flex;justify-content:center;align-items:center;
 						 background:rgba(36,36,38,0.99);font-family:
