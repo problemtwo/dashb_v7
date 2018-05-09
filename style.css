@@ -11,6 +11,9 @@ html,body{margin:0;padding:0;overflow:hidden;width:100%;
 #a::-moz-selection{background:rgb(36,36,38);color:rgb(1,93,13);}
 #b::-moz-selection{background:rgb(36,36,38);color:rgb(49,141,61);}
 #c::-moz-selection{background:rgb(36,36,38);color:rgb(97,189,109);}
+#a::selection{background:rgb(36,36,38);color:rgb(1,93,13);}
+#b::selection{background:rgb(36,36,38);color:rgb(49,141,61);}
+#c::selection{background:rgb(36,36,38);color:rgb(97,189,109);}
 #tasks{position:absolute;top:30%;left:5%;width:40%;height:40%;
        display;flex;justify-content:center;align-items:center;
 						 background:rgba(36,36,38,0.99);font-family:
