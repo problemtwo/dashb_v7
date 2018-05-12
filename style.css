@@ -1,26 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
-html,body{margin:0;padding:0;overflow:hidden;width:100%;
-          height:100%;background:rgba(26,26,28,0.99);}
-#clock{position:absolute;top:30%;left:55%;width:40%;height:40%;
-       display:flex;justify-content:center;align-items:center;
-						 background:rgba(36,36,38,0.99);font-family:
-						 'Ubuntu Mono';font-size:300%;}
-#a{background:rgba(36,36,38,0.99);color:rgba(1,93,13,0.99);position:absolute;left:10%;top:25%;}
-#b{background:rgba(36,36,38,0.99);color:rgba(49,141,61,0.99);position:absolute;left:30%;top:45%;}
-#c{background:rgba(36,36,38,0.99);color:rgba(97,189,109,0.99);position:absolute;left:50%;top:65%;}
-#a::-moz-selection{background:rgb(1,93,13);color:rgb(36,36,38);}
-#b::-moz-selection{background:rgb(49,141,61);color:rgb(36,36,38);}
-#c::-moz-selection{background:rgb(97,189,109);color:rgb(36,36,38);}
-#a::selection{background:rgb(1,93,13);color:rgb(36,36,38);}
-#b::selection{background:rgb(49,141,61);color:rgb(36,36,38);}
-#c::selection{background:rgb(97,189,109);color:rgb(36,36,38);}
-#tasks{position:absolute;top:30%;left:5%;width:40%;height:40%;
-       display;flex;justify-content:center;align-items:center;
+html,body{margin:0;padding:0;width:100%;height:100%;
+          background:rgba(26,26,28,0.99);}
+body{
+	--clr:rgba(49,141,61,1);
+ --oclr:rgba(49,141,61,0.99);
+	--aclr:rgba(1,91,13,0.99);
+	--bclr:rgba(97,189,109,0.99);
+}
+#navbar{float:left;width:100%;height:10%;}
+#title{float:left;width:10%;height:100%;font-family:'Ubuntu Mono';
+       color:rgba(49,141,61,0.99);text-align:right;}
+#title::-moz-selection{background:var(--clr);color:rgb(26,26,28);}
+#clock{float:left;width:100%;height:90%;font-family:
+       'Ubuntu Mono';font-size:300%;}
+#a{background:rgba(36,36,38,0.99);color:var(--aclr);float:left;
+   width:40%;height:33.33%;padding-left:20%;padding-right:40%;margin:0;}
+#b{background:rgba(36,36,38,0.99);color:var(--oclr);float:left;
+   width:40%;height:33.33%;padding-left:30%;padding-right:30%;margin:0;}
+#c{background:rgba(36,36,38,0.99);color:var(--bclr);float:left;
+   width:40%;height:33.33%;padding-left:40%;padding-right:20%;margin:0;}
+#a::-moz-selection{background:var(--aclr);color:rgb(36,36,38);}
+#b::-moz-selection{background:var(--oclr);color:rgb(36,36,38);}
+#c::-moz-selection{background:var(--bclr);color:rgb(36,36,38);}
+#a::selection{background:var(--aclr);color:rgb(36,36,38);}
+#b::selection{background:var(--oclr);color:rgb(36,36,38);}
+#c::selection{background:var(--bclr);color:rgb(36,36,38);}
+#tasks{float:left;width:100%;height:90%;display;flex;
+	      justify-content:center;align-items:center;
 						 background:rgba(36,36,38,0.99);font-family:
 						 'Ubuntu Mono';font-size:300%;}
 .task-name{float:left;width:60%;height:10%;resize:none;color:#61BD6D;font-family:'Ubuntu Mono';
            background:rgba(36,36,38,0.99);border:0;outline:0;
 										 text-align:center;font-size:30%;margin:0;padding:0;}
+.task-name::-moz-selection{background:var(--bclr);color:rgb(36,36,38);}
+.task-name::selection{background:var(--bclr);color:rgb(36,36,38);}
 .task-remove{float:left;width:40%;height:10%;border:0;outline:0;margin:0;padding:0;
              background:rgba(56,56,58,0.99);color:#61BD6D;font-family:'Ubuntu Mono';
 												 font-size:30%;}
+#settings{float:left;width:100%;height:90%;}
+#color-setting{float:left;width:100%;height:10%;color:var(--oclr);background:inherit;
+               border:0;outline:0;font-family:'Ubuntu Mono';font-size:150%;resize:none;}

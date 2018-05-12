@@ -21,4 +21,35 @@ window.onload = () => {
 			document.getElementById('tasks').appendChild(content);
 		}
 	}
+
+	document.getElementById('color-setting').onkeydown = e => {
+		if(e.keyCode === 13){
+			e.preventDefault();
+			document.getElementsByTagName('body')[0].style.setProperty('--clr',
+				document.getElementById('color-setting').value);
+		}
+	};
+
+	let ctrl = false;
+	let jflg = false;
+	window.onkeydown = e => {
+		switch(e.keyCode) {
+			case 17:
+				ctrl = true;
+				break;
+			case 74:
+				if(ctrl){
+					if(jflg){
+						document.getElementById('clock').style.height = 
+							document.getElementById('tasks').style.height = '90%';
+					}else{
+						document.getElementById('clock').style.height = '30%';
+						document.getElementById('tasks').style.height = '30%';
+						document.getElementById('settings').style.height = '30%';
+					}
+					jflg = !jflg;
+				}
+				break;
+		}
+	};
 };

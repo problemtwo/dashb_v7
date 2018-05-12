@@ -7,19 +7,25 @@
 		<title></title>
 	</head>
 	<body>
+		<div id='navbar'>
+			<h1 id='title'>BashD</h1>
+		</div>
 		<div id='clock'>
 			<div id='a'></div>
 			<div id='b'></div>
 			<div id='c'></div>
 		</div>
 		<div id='tasks'>
-			<textarea class='task-name' id='add-task' placeholder='Add task'></textarea>
+			<textarea class='task-name' id='add-task' placeholder='Add task' spellcheck='false'></textarea>
 		</div>
 		<template id='t-task'>
 			<div class='task'>
-				<textarea class='task-name' placeholder='Task'></textarea>
+				<textarea class='task-name' placeholder='Task' spellcheck='false'></textarea>
 				<button class='task-remove'>Done</button>
 			</div>
 		</template>
+		<div id='settings'>
+			<textarea id='color-setting' placeholder='Color (ex. #fff)' spellcheck='false'></textarea>
+		</div>
 	</body>
 </html>
